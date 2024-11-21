@@ -1,0 +1,33 @@
+GET http://localhost:5000/users
+Authorization: bearerey eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNIGZpa3JpIDIiLCJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTczMjE1MzE2MSwiZXhwIjoxNzMyMTUzMTgxfQ.iUas7blZUh-h9MixciGEPXvWrbiVgOqYfvV2I1RseMI
+
+
+
+
+###
+POST http://localhost:5000/users
+Content-type: application/json
+
+
+{
+    "name":"M fikri 2",
+    "email":"email@gmail.com",
+    "password": "123456789",
+    "confPassword": "123456789"
+}
+
+###
+POST http://localhost:5000/login
+Content-type: application/json
+
+{
+    "email" : "email@gmail.com",
+    "password":"123456789"
+}
+
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
